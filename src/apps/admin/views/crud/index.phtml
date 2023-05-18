@@ -1,0 +1,49 @@
+<a href="../crud/index" type='submit' class='btn btn-info'>Add Product</a>
+<a href="../crud/show" type='submit' class='btn btn-info'>Show Product</a>
+<?php echo $this->tag->form('../admin/crud/add') ?>
+<h2>Add Product</h2>
+<div class="form-row">
+    <div class="form-group col-md-6">
+        <label for="inputEmail4">Name</label>
+        <input type="text" class="form-control" name='name' placeholder="Product Name">
+    </div>
+    <div class="form-group col-md-6">
+        <label for="inputPassword4">Category</label>
+        <input type="text" class="form-control" name='category' placeholder="Category">
+    </div>
+</div>
+
+<div class="form-row">
+    <div class="form-group col-md-6">
+        <label for="inputEmail4">Price</label>
+        <input type="number" class="form-control" name='price' placeholder="Product Price">
+    </div>
+    <div class="form-group col-md-6">
+        <label for="inputPassword4">Stock</label>
+        <input type="number" class="form-control" name='stock' placeholder="Stock">
+    </div>
+</div>
+<div id='meta'>
+    Meta Details
+    <div id="meta-rows" class='m-2'>
+        <div class="meta-row m-3">
+            <input type="text" placeholder="key" name='meta_key[]'>
+            <input type="text" placeholder="value" name='meta_value[]'>
+            <input type="button" id="addMeta" class='btn btn-success px-3 py-1' value="+">
+            <input type="button" id="removeMeta" class='btn btn-danger px-3 py-1' value="-">
+        </div>
+    </div>
+</div>
+<div id='variation'>
+    Other Variations
+    <div id="variation-rows" class='m-2'>
+        <div class="variation-row m-3">
+            <input type="text" placeholder="key" name="variation_key[]">
+            <input type="text" placeholder="value" name='variation_value[]'>
+            <input type="button" id="addVariation" class='btn btn-success px-3 py-1' value="+">
+            <input type="button" id="removeVariation" class='btn btn-danger px-3 py-1' value="-">
+        </div>
+    </div>
+</div>
+<button type="submit" class="btn btn-primary">Add Product</button>
+</form>

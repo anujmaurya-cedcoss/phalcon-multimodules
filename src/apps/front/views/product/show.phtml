@@ -1,0 +1,22 @@
+<h3>Product List</h3>
+<form action="/product/show" method="post" class='row'>
+    <input class='form form-control col-8 m-2' type='text' name= 'search' placeholder='Enter search keyword'>
+    <button type="submit" class="btn btn-primary m-2">Search</button>
+</form>
+<div class='row'>
+
+    <?php
+    foreach ($message as $key => $value) {
+        echo "<div class=\"card m-2 col-3 bg-light\">
+        <h5 class=\"card-title card-header mb-3\"><strong>Name</strong>: $value[name]</h5>
+    <div class=\"card-body\">
+    <h6 class=\"card-subtitle mb-2 text-muted\"><strong>Category</strong>: $value[category]</h6>
+    <p class=\"card-text\"><strong>Price :</strong>$$value[price]</p>
+    </div>
+    <div class = 'row'>
+    <a href=\"/product/quickView?id=$value[_id]\" class=\"btn btn-primary m-1 \">Quick View</a>
+    </div>
+    </div>";
+    }
+    ?>
+</div>
