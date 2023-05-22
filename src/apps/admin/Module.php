@@ -19,8 +19,8 @@ class Module implements ModuleDefinitionInterface
         $loader = new Loader();
         $loader->registerNamespaces(
             [
-                'Multi\Back\Controllers' => '../apps/back/controllers/',
-                'Multi\Back\Models'      => '../apps/back/models/',
+                'Multi\Back\Controllers' => '../apps/admin/controllers/',
+                'Multi\Back\Models'      => '../apps/admin/models/',
             ]
         );
 
@@ -48,7 +48,7 @@ class Module implements ModuleDefinitionInterface
             function () {
                 $view = new View();
                 $view->setViewsDir(
-                    '../apps/back/views/'
+                    '../apps/admin/views/'
                 );
 
                 return $view;

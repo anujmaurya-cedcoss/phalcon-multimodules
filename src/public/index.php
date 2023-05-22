@@ -20,7 +20,7 @@ $container->set(
         $router->add(
             '/admin/:controller/:action/:params',
             [
-                'module' => 'back',
+                'module' => 'admin',
                 'controller' => 1,
                 'action' => 2,
                 'params' => 3,
@@ -34,7 +34,7 @@ $container->set(
         $router->add(
             '/admin/products/:action',
             [
-                'module' => 'back',
+                'module' => 'admin',
                 'controller' => 'products',
                 'action' => 1,
             ]
@@ -77,9 +77,9 @@ $application->registerModules(
             'className' => \Multi\Front\Module::class,
             'path' => '../apps/front/Module.php',
         ],
-        'back' => [
+        'admin' => [
             'className' => \Multi\Back\Module::class,
-            'path' => '../apps/back/Module.php',
+            'path' => '../apps/admin/Module.php',
         ]
     ]
 );

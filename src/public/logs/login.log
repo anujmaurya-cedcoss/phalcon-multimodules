@@ -1,3 +1,7 @@
 [2023-05-18T07:43:08+00:00][warning] Unauthorized access attempt by : email => 'a@mail.com' password => '123'
 [2023-05-18T07:43:38+00:00][info] Successful attempt by : email => 'a@mail.com' password => 'pass'
 [2023-05-18T07:45:38+00:00][warning] Unauthorized access attempt by : email => 'a@m.com' password => '&lt;script&gt;alert(&#039;hey&#039;)&lt;/script&gt;'
+[2023-05-22T07:54:21+00:00][warning] Unauthorized access attempt by : email => '' password => ''
+[2023-05-22T07:56:24+00:00][info] Successful attempt by : email => 'a@mail.com' password => 'pass'
+[2023-05-22T07:59:59+00:00][info] Successful attempt by : email => 'a@mail.com' password => 'pass'
+[2023-05-22T08:02:27+00:00][info] Successful attempt by : email => 'a@mail.com' password => 'pass'
